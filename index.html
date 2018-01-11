@@ -13,28 +13,36 @@
     <title>Redesign Automoblox</title>
   </head>
   <body class="container">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="images/automoblox_logo.jpg" width="100" height="70" alt="Automoblox Logo">
-        </a>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-    </nav><!--.nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/automoblox_logo.jpg" width="125" height="75" alt="Automoblox Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Automoblox Models
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="red-automoblox.html">C9 Automoblox</a>
+                            <a class="dropdown-item" href="orange-automoblox.html">A9 Automoblox</a>
+                            <a class="dropdown-item" href="green-automoblox.html">T9 Automoblox</a>
+                            <a class="dropdown-item" href="blue-automoblox.html">M9 Automoblox</a>
+                            <a class="dropdown-item" href="purple-automoblox.html">X9 Automoblox</a>
+                        </div>
+                    </li>
+                </ul>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Cart</button>
+            </div><!--.collapse-->
+        </nav>
+
     <main>
         <h1>Automoblox - Design Your Dreams</h1>
             <div class="jumbotron">
@@ -46,9 +54,23 @@
                 <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                 </p>
             </div>
-
-
     </main>
+        <section>
+            <h2>Shop</h2>
+                <p>Find all your Automoblox needs today and purchase while they last.</p>
+            <h2>Learn</h2>
+                <p>Learn all about your Automoblox and how you can create any car your desire.</p>
+            <h2>Play</h2>
+                <p>Use your imagination to create any and everything with Automoblox designs.</p>
+        </section>
+            <aside>
+                <h3>Clearance Today Only!</h3>
+                <img src="./images/a9_small.jpg" alt="A9 Automoblox Photo">
+                    <p>Limited quanities. Purchase before they zoom away!</p>
+            </aside>
+        <footer class="mr-0">
+            <small>Copyright of Automoblox&copy;</small>
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
