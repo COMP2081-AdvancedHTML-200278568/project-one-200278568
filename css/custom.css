@@ -18,10 +18,28 @@ body {
 .navbar {
     background-color: #fff;
 }
-
+a.btn {
+    border: 2px solid #cd0000;
+    color: white;
+}
+.btn{
+    border: 2px solid #cd0000;
+    background: transparent;
+    color: #cd0000;
+}
+.btn:hover {
+    /* background-color: none; */
+    background-color: #cd0000;
+    color: white;
+}
 main.jumbotron {
     background-color:rgba(0, 0, 0, 0.7);
     color: #fff;
+}
+img.lightSpeedIn {
+    animation-name: lightSpeedIn;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
 }
 h1 {
     font-family: 'Nexa Bold';
@@ -56,20 +74,74 @@ aside {
 }
 
 article > div >  img {
-    max-width: 300px;
+    max-width: 310px;
     max-height: 200px;
-    padding: 20px;
+    padding: 20px; 
+}
+article > div {
+    background-color: #cd0000;
+    border-radius: 5px;
+    margin: 10px;
 }
 h4 {
     font-family: 'Source Sans Pro Light';
+    font-size: 22px;
+    color: whitesmoke;
+    margin: 10px 0 0 20px;
+}
+article > div > a {
+    color: white;
+    font-family: 'Nexa Bold';
     font-size: 18px;
-    color: #cd0000;
+    margin-left: 5%;
+}
+article > div > a:hover {
+    color: rgb(73, 241, 241);
+    text-decoration: none;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
 }
 
 footer {
     color: crimson;
     text-align: center;
 }
+
+/* Animations */
+/* These are from Animate.css: https://github.com/daneden/animate.css/blob/master/animate.css */
+@keyframes lightSpeedIn {
+    from {
+      transform: translate3d(100%, 0, 0) skewX(-30deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(-5deg);
+      opacity: 1;
+    }
+  
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeIn {
+    from {
+        color: white;
+    }
+  
+    to {
+      color: rgb(73, 241, 241);
+    }
+  }
 
 /* ************************************ MEDIA QUERIES *********************************** */
 
@@ -81,6 +153,11 @@ footer {
 img.col-lg-6 {
     max-width: 410px;
     max-height: 200px; 
+    }
+article > div >  img {
+    max-width: 100px;
+    max-height: 90px;
+    padding: 10px; 
     }
 }
 
@@ -94,6 +171,12 @@ img.col-lg-6 {
     max-width: 510px;
     max-height: 300px; 
     } */
+
+article > div >  img {
+    max-width: 190px;
+    max-height: 90px;
+    padding: 10px; 
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -103,6 +186,11 @@ img.col-lg-6 {
     }
 img.col-lg-6 {
     max-width: 50%;
+    }
+article > div >  img {
+    max-width: 210px;
+    max-height: 100px;
+    padding: 10px; 
     }
 }
 
