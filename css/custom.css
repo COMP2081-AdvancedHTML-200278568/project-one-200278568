@@ -15,6 +15,9 @@
 body {
     font-family: 'Source Sans Pro Regular';
 }
+nav {
+    font-family: 'Source Sans Pro Light';
+}
 .navbar {
     background-color: #fff;
 }
@@ -147,9 +150,7 @@ footer {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.99px) { 
-.navbar {
-    background-color: pink;
-    }
+
 img.col-lg-6 {
     max-width: 410px;
     max-height: 200px; 
@@ -164,9 +165,7 @@ article > div >  img {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.99px) { 
-.navbar {
-    background-color: red;
-    }
+
 /* img.col-lg-6 {
     max-width: 510px;
     max-height: 300px; 
@@ -181,9 +180,7 @@ article > div >  img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.99px) { 
-.navbar {    
-    background-color: blue;
-    }
+
 img.col-lg-6 {
     max-width: 50%;
     }
@@ -196,9 +193,7 @@ article > div >  img {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.99px) {
-.navbar { 
-    background-color: limegreen;
-    }
+
 /* img.col-lg-6 {
    max-width: 50%;
     } */
